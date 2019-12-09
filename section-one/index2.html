@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- React Library -->
+<script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- React DOM Library -->
+<script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- BABEL Library  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+    <title>Lets React!</title>
+</head>
+<body>
+    <!-- Location to insert react content -->
+    <div id="app">React has not rendered yet</div>
+    <div id="app2">React has not rendered yet</div>
+
+    <!-- javascript -->
+    <script type="text/babel">
+        ReactDOM.render(
+       <div>    
+            <p>I am a paragraph!</p>
+            <a  href="https://google.com">google</a>
+            <ul>
+                <li>I need to eat something good today</li>    
+                <li>I need to grab a journal today</li>    
+                <li>I need to grab headphones today</li>    
+            </ul>
+        </div>,
+            document.getElementById("app2")      
+        );
+    
+
+        // Render react to the DOM - will accept two arguements (react what, react where)
+            ReactDOM.render(
+                //REACT WHAT - jsx
+                <h1>Hello World</h1>,
+                //React WHERE - DIV With id of "APP"
+                document.getElementById("app")
+            );
+
+    </script>
+</body>
+</html>
